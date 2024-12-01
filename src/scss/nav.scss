@@ -24,5 +24,20 @@ nav {
       margin-inline: 20px;
       color: var(--text-color);
     }
+    .active-link {
+      position: relative;
+      color: var(--first-color);
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 5px;
+        height: 5px;
+        background-color: var(--first-color);
+        left: 50%;
+        bottom: -15px;
+        border-radius: 50%;
+      }
+    }
   }
 }

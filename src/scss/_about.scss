@@ -8,6 +8,12 @@
   .contents {
     width: 50%;
   }
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 15px;
+  }
   .card {
     position: relative;
     display: flex;
@@ -20,15 +26,34 @@
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     border-radius: 20px;
 
-    h3 {
-      font-size: 20px;
-      font-weight: 600;
-      color: var(--text-color-second);
-      margin-bottom: 15px;
-    }
     div {
       font-size: 15px;
       color: #777;
+    }
+  }
+  .list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 30px 70px;
+    padding-inline: 20px;
+    width: 100%;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text-color);
+      margin-bottom: 15px;
+    }
+
+    .item {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      color: var(--text-color-second);
+      position: relative;
     }
   }
 }

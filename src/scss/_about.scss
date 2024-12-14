@@ -50,10 +50,26 @@
     .item {
       width: 80%;
       display: flex;
-      justify-content: space-between;
       padding: 15px;
-      color: var(--text-color-second);
+      color: var(--text-color);
       position: relative;
+      justify-content: space-between;
+
+      strong {
+        font-weight: bold;
+      }
+
+      &::before {
+        box-sizing: border-box;
+        content: "";
+        position: absolute;
+        margin-top: 2px;
+        left: -8px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        background-color: var(--first-color);
+      }
     }
   }
 }
